@@ -3,7 +3,6 @@
 <div align="center">
 
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Practicals](https://img.shields.io/badge/practicals-13-orange.svg)
 ![Status](https://img.shields.io/badge/status-complete-success.svg)
 
@@ -11,7 +10,7 @@
 *B.Sc. (H) Computer Science - Semester I*  
 *NEP UGCF 2022 | Academic Year 2025-26*
 
-[About](#-about) • [Practicals](#-practical-list) • [Installation](#-installation) • [Usage](#-usage) • [Topics](#-topics-covered)
+[About](#-about) • [Practicals](#-practical-list) • [Usage](#-usage) • [Topics](#-topics-covered)
 
 </div>
 
@@ -36,6 +35,7 @@ This repository contains **13 practical implementations** for the Object Oriente
 | **Semester** | I |
 | **Framework** | NEP UGCF 2022 |
 | **Academic Year** | 2025-26 |
+| **Institution** | Ramanujan College (University of Delhi) |
 
 ---
 
@@ -45,44 +45,53 @@ This repository contains **13 practical implementations** for the Object Oriente
 
 | # | Practical Name | Description | File |
 |---|----------------|-------------|------|
-| **01** | Quadratic Equation | Find roots using discriminant | [`practical_01.py`](practical_01.py) |
-| **02** | Prime Numbers | Check prime, generate primes (with functions) | [`practical_02.py`](practical_02.py) |
-| **03** | Pyramid Patterns | Normal and reverse pyramid patterns | [`practical_03.py`](practical_03.py) |
+| **01** | Quadratic Equation | Find roots using discriminant | [`PRACTICAL 01.py`](practicals/PRACTICAL%2001.py) |
+| **02** | Prime Numbers | Check prime, generate primes (with functions) | [`PRACTICAL 02.py`](practicals/PRACTICAL%2002.py) |
+| **03** | Pyramid Patterns | Normal and reverse pyramid patterns | [`PRACTICAL 03.py`](practicals/PRACTICAL%2003.py) |
 
 ### String Operations (4-7)
 
 | # | Practical Name | Description | File |
 |---|----------------|-------------|------|
-| **04** | Character Analysis | Identify character type and properties | [`practical_04.py`](practical_04.py) |
-| **05** | String Operations | Frequency, replace, remove operations | [`practical_05.py`](practical_05.py) |
-| **06** | Swap Characters | Swap first n characters of two strings | [`practical_06.py`](practical_06.py) |
-| **07** | Substring Search | Find all occurrences of substring | [`practical_07.py`](practical_07.py) |
+| **04** | Character Analysis | Identify character type and properties | [`PRACTICAL 04.py`](practicals/PRACTICAL%2004.py) |
+| **05** | String Operations | Frequency, replace, remove operations | [`PRACTICAL 05.py`](practicals/PRACTICAL%2005.py) |
+| **06** | Swap Characters | Swap first n characters of two strings | [`PRACTICAL 06.py`](practicals/PRACTICAL%2006.py) |
+| **07** | Substring Search | Find all occurrences of substring | [`PRACTICAL 07.py`](practicals/PRACTICAL%2007.py) |
 
 ### Data Structures (8, 11-12)
 
 | # | Practical Name | Description | File |
 |---|----------------|-------------|------|
-| **08** | List Comprehension | Cubes of even integers from mixed list | [`practical_08.py`](practical_08.py) |
-| **11** | Dictionary Operations | Create dictionary with cubes as values | [`practical_11.py`](practical_11.py) |
-| **12** | Tuple Operations | Slicing, filtering, concatenation, min/max | [`practical_12.py`](practical_12.py) |
+| **08** | List Comprehension | Cubes of even integers from mixed list | [`PRACTICAL 08.py`](practicals/PRACTICAL%2008.py) |
+| **11** | Dictionary Operations | Create dictionary with cubes as values | [`PRACTICAL 11.py`](practicals/PRACTICAL%2011.py) |
+| **12** | Tuple Operations | Slicing, filtering, concatenation, min/max | [`PRACTICAL 12.py`](practicals/PRACTICAL%2012.py) |
 
 ### Advanced Concepts (9-10, 13)
 
 | # | Practical Name | Description | File |
 |---|----------------|-------------|------|
-| **09** | File Handling | Read, analyze, and manipulate file content | [`practical_09.py`](practical_09.py) |
-| **10** | OOP - Point Class | Class with attributes and distance method | [`practical_10.py`](practical_10.py) |
-| **13** | Exception Handling | Name validation with custom exceptions | [`practical_13.py`](practical_13.py) |
+| **09** | File Handling | Read, analyze, and manipulate file content | [`PRACTICAL 09.py`](practicals/PRACTICAL%2009.py) |
+| **10** | OOP - Point Class | Class with attributes and distance method | [`PRACTICAL 10.py`](practicals/PRACTICAL%2010.py) |
+| **13** | Exception Handling | Name validation with custom exceptions | [`PRACTICAL 13.py`](practicals/PRACTICAL%2013.py) |
 
 ---
 
-## 🚀 Installation
+## 💻 Usage
 
-### Prerequisites
+### Method 1: Run Individual Practical
 
 ```bash
-# Check Python version (3.6+ required)
-python --version
+# Run specific practical
+python "practicals/PRACTICAL 01.py"
+python "practicals/PRACTICAL 02.py"
+# ... and so on
+```
+
+### Method 2: Interactive Menu
+
+```bash
+# Launch interactive menu
+python main.py
 ```
 
 **Menu Interface:**
@@ -104,11 +113,11 @@ Enter choice:
 
 ```python
 # Import specific practical functions
-from practical_02 import is_prime, first_n_primes
+import sys
+sys.path.append('practicals')
 
-# Use the functions
-print(is_prime(17))  # True
-print(first_n_primes(5))  # [2, 3, 5, 7, 11]
+# Now you can import (after adding .py files to practicals folder)
+# Example: from a renamed file
 ```
 
 ---
@@ -121,22 +130,20 @@ python-oop-practicals/
 ├── 📄 README.md              # This file
 ├── 🐍 main.py                # Interactive menu
 │
-├── 📁 Practicals/
-│   ├── practical_01.py       # Quadratic equation
-│   ├── practical_02.py       # Prime numbers
-│   ├── practical_03.py       # Pyramid patterns
-│   ├── practical_04.py       # Character analysis
-│   ├── practical_05.py       # String operations
-│   ├── practical_06.py       # Swap characters
-│   ├── practical_07.py       # Substring search
-│   ├── practical_08.py       # List comprehension
-│   ├── practical_09.py       # File handling
-│   ├── practical_10.py       # Point class (OOP)
-│   ├── practical_11.py       # Dictionary operations
-│   ├── practical_12.py       # Tuple operations
-│   └── practical_13.py       # Exception handling
-│
-└── 📜 LICENSE                # MIT License
+└── 📁 Practicals/
+    ├── practical_01.py       # Quadratic equation
+    ├── practical_02.py       # Prime numbers
+    ├── practical_03.py       # Pyramid patterns
+    ├── practical_04.py       # Character analysis
+    ├── practical_05.py       # String operations
+    ├── practical_06.py       # Swap characters
+    ├── practical_07.py       # Substring search
+    ├── practical_08.py       # List comprehension
+    ├── practical_09.py       # File handling
+    ├── practical_10.py       # Point class (OOP)
+    ├── practical_11.py       # Dictionary operations
+    ├── practical_12.py       # Tuple operations
+    └── practical_13.py       # Exception handling
 ```
 
 ---
@@ -202,7 +209,7 @@ After completing these practicals, you will be able to:
 
 ---
 
-## Supplementary Resources
+### Practice and Learning Resources
 
 - [Official Python Documentation](https://docs.python.org/3/)
 - [Python PEP 8 Style Guide](https://pep8.org/)
@@ -228,4 +235,42 @@ After completing these practicals, you will be able to:
 - ✅ PEP 8 Compliant
 - ✅ Type hints (where applicable)
 - ✅ Docstrings for functions
-- ✅ Err
+- ✅ Error handling implemented
+- ✅ No external libraries required
+
+---
+
+## 👨‍💻 Author
+
+**Birjesh Khatana**  
+B.Sc. (H) Computer Science - Semester I  
+Ramanujan College (University of Delhi)  
+Academic Year: 2025-26
+
+### Connect
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/mspf001-cyber)
+
+</div>
+
+---
+
+## 🙏 Acknowledgments
+
+- Course Instructors at Ramanujan College (DU)
+- Python Software Foundation for Python language
+- GitHub for hosting this repository
+- Classmates for collaborative learning
+
+---
+
+
+<div align="center">
+
+**⚡️ Quick Links**
+
+[Usage](#-usage) • [Practicals](#-practical-list) • [Topics](#-topics-covered)
+
+---
